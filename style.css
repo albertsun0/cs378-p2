@@ -1,6 +1,9 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .container{
@@ -11,25 +14,24 @@ body {
 
 .header{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .header img{
-  width: 80vw;
+  width: 60vw;
 }
 
 .heading{
-  color: orange;
-  font-size: 20px;
-  font-style: italic;
+  color: #f27b2c;
+  font-size: 22px;
   text-align: center;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .subheading{
-  color: grey;
-  font-size: 20px;
+  color: #3c3c3c;
+  font-size: 22px;
   font-style: italic;
   margin-bottom: 20px;
   text-align: center;
@@ -42,13 +44,16 @@ body {
 }
 
 .left{
-  width: 8em;
-  height: 8em;
+  width: 7em;
+  height: 7em;
   background-size: cover;
   margin: 16px;
-  background-image: url('https://www.seriouseats.com/thmb/YwaJNJc7_TDAjdo8pzN_JElsgb4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2021__02__20210214-stovetop-mac-cheese-reshoot-vicky-wasik-9-0760b642ca704cf8b2c5121a363a60a2.jpg');
 }
 
+.image-square{
+  width: 7em;
+  height: 7em;
+}
 .right{
   flex: 1;
   width: auto;
@@ -59,6 +64,7 @@ body {
 }
 
 .label-container{
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,12 +73,13 @@ body {
 }
 
 button{
-  background-color: lavender;
-  padding: 4px;
+  background-color: #bed5f8;
+  padding: 2px;
   font-size: 20px;
   border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
+  border-color: darkslategray;
 }
 
 @media only screen and (min-width: 600px) {
