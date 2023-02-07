@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" ></script>
   </head>
   <!-- Implement from below -->
   <body>
@@ -14,6 +15,7 @@
       </header>
       <div class="heading">Delicious, From-Scratch Recipes Close at Hand</div>
       <div class="subheading">The fresh choice of UT!</div>
+
       <div class="item">
         <div class="left">
           <img class="image-square" alt = "mac and cheese" src="https://www.seriouseats.com/thmb/YwaJNJc7_TDAjdo8pzN_JElsgb4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2021__02__20210214-stovetop-mac-cheese-reshoot-vicky-wasik-9-0760b642ca704cf8b2c5121a363a60a2.jpg"></img>
@@ -23,8 +25,10 @@
             <div>mac & cheese</div>
             <div>$5</div>
           </div>
-          <div>
-            <button>Order</button>
+          <div class="order-buttons">
+            <button onclick="update(-1, 1)">-</button>
+            <div class="count" id = "count1">0</div>
+            <button onclick="update(1, 1)">+</button>
           </div>
         </div>
       </div>
@@ -38,8 +42,10 @@
             <div>Pasta</div>
             <div>$7</div>
           </div>
-          <div>
-            <button>Order</button>
+          <div class="order-buttons">
+            <button onclick="update(-1, 2)">-</button>
+            <div class="count" id = "count2">0</div>
+            <button onclick="update(1, 2)">+</button>
           </div>
         </div>
       </div>
@@ -53,8 +59,10 @@
             <div>Taco</div>
             <div>$5</div>
           </div>
-          <div>
-            <button>Order</button>
+          <div class="order-buttons">
+            <button onclick="update(-1, 3)">-</button>
+            <div class="count" id = "count3">0</div>
+            <button onclick="update(1, 3)">+</button>
           </div>
         </div>
       </div>
@@ -68,14 +76,22 @@
             <div>Enchilada</div>
             <div>$8</div>
           </div>
-          <div>
-            <button>Order</button>
+          <div class="order-buttons">
+            <button onclick="update(-1,4)">-</button>
+            <div class="count" id = "count4">0</div>
+            <button onclick="update(1,4)">+</button>
           </div>
         </div>
       </div>
-
+      
+      <div class = "bottom">
+        <div style="padding-left:16px">Subtotal $</div>
+        <div id = "total">0</div>
+        <div style="flex:1"></div>
+        <button class="blue" onclick= "placeOrder()">Order</button>
+        <button class="grey" style="margin-right: 16px;" onclick="clearAll()">Clear All</button>
+      </div>
     </div>
-    
     
   </body>
 </html>
