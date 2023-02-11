@@ -39,5 +39,4 @@ const placeOrder = () => {
         s = "No items in cart";
     }
     alert(s);
-    clearAll();
 }
